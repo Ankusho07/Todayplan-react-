@@ -1,7 +1,7 @@
 import logo from './logo.svg';
-import './App.css'; //index.css me jake direct css apply kar sktey hai
+import './App.css'; 
 
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'   // now we can use bootstrap
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'   
 
 import React, { Component } from 'react'
 import Plan from './Plan'
@@ -50,7 +50,7 @@ class App extends Component {
   Add = ()=>{
 
     if(this.state.text !== ''){
-      const items = [...this.state.items,this.state.text] //agr hum spread operator ka use nhi kenge to arrays ke item k place pe puri array store ho jayegi
+      const items = [...this.state.items,this.state.text] 
       this.setState(
         {
           items:items,text:''
